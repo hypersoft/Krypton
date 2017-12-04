@@ -2,6 +2,17 @@
 
 echo
 
+RLWRAP=`type -p rlwrap`;
+BASH=`type -p bash`;
+
+[[ -z "$RLWRAP" ]] && {
+    echo "Warning: rlwrap support not available; krypton will install with limited interactive mode support";
+    echo "Please install the rlwrap package for your system to enable enhanced interactive mode support";
+    echo
+} || {
+ RLWRAP="$RLWRAP -c --command-name krypton ";
+}
+
 KRYPTON=`pwd`
 
 [[ ${KRYPTON##*/} == "Krypton" ]] || {
@@ -36,9 +47,9 @@ cp -v "$JAR_PATH" "$INSTALL_LIB_PATH";
 # install the launcher
 echo $'\n'"generating $INSTALL_BIN_PATH/krypton launcher..."
 cat <<EOF > "$INSTALL_BIN_PATH/krypton"
-#!/usr/bin/env bash
+#!${BASH}
 
-java -jar $INSTALL_LIB_PATH/krypton.jar "\$@";
+${RLWRAP}java -jar ${INSTALL_LIB_PATH}/krypton.jar "\$@";
 
 EOF
 
