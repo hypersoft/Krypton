@@ -23,7 +23,7 @@ Here is a dump from within Krypton's interactive console support mode of the XPR
 $K Object.keys(XPR).join(XPR.getEnvironmentLineSeparator())
 copyFile
 writableFile
-appendTextFile
+makeFileWritable
 fileWritableSpace
 run
 fileExists
@@ -35,6 +35,7 @@ fileWriteTime
 readTextFile
 getUserName
 getEnvironmentKey
+appendTextFile
 readableFile
 createDirectory
 setJsonSpacing
@@ -45,14 +46,13 @@ setEnvironmentKey
 deleteFile
 printLine
 deleteEnvironmentKey
-setFileExecutable
 getEnvironmentLineSeparator
-setFileWritable
 readLine
 getSystemType
 moveFile
 getEnvironmentFileSeparator
 getSystemVersion
+makeFileReadable
 getUserHome
 print
 printErrorLine
@@ -62,7 +62,7 @@ getEnvironmentPathSeparator
 currentDirectory
 fileSize
 getEnvironmentKeys
-setFileReadable
+makeFileExecutable
 ```
 
 ### Development Note
