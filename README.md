@@ -46,8 +46,12 @@ Here is a dump from within Krypton's interactive console support mode of the XPR
 [Linux: AMD64: Krypton]$K JSON.stringify(Object.keys(XPR).sort(), undefined, 2)
 [
   "appendTextFile",
+  "base64ToBuffer",
+  "bufferToBase64",
+  "bufferToString",
   "changeDirectory",
   "copyFile",
+  "createBuffer",
   "createDirectory",
   "createFile",
   "currentDirectory",
@@ -62,6 +66,7 @@ Here is a dump from within Krypton's interactive console support mode of the XPR
   "fileSize",
   "fileWritableSpace",
   "fileWriteTime",
+  "freeBuffer",
   "getCharSet",
   "getCharacterEncodings",
   "getEnvironmentKey",
@@ -93,6 +98,7 @@ Here is a dump from within Krypton's interactive console support mode of the XPR
   "setCharSet",
   "setEnvironmentKey",
   "setJsonSpacing",
+  "stringToBuffer",
   "writableFile",
   "writeTextFile"
 ]
