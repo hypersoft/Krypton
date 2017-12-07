@@ -39,7 +39,7 @@ Krypton also features technology from the [org.json](https://github.com/stleary/
 Here is a dump from within Krypton's interactive console support mode of the XPR's current API:
 
 ```javascript
-$K Object.keys(XPR).sort().join("\n")
+$K Object.keys(XPR).sort().join(XPR.getLineSeparator())
 appendTextFile
 changeDirectory
 copyFile
@@ -60,6 +60,7 @@ getEnvironmentKey
 getEnvironmentKeys
 getFileSeparator
 getFileUri
+getFunctionSDK
 getLineSeparator
 getPathSeparator
 getSystemArchitecture
