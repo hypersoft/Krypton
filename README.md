@@ -1,6 +1,10 @@
 # Krypton
 Portable JavaScript Engine Featuring Mozilla Rhino
 
+```sh
+$K configurePrompt('"[" + XPR.getSystemType() + ": " + XPR.getSystemArchitecture().toUpperCase() + ": " + XPR.fileName(XPR.currentDirectory()) + "]$K "', true)
+[Linux: AMD64: Krypton]$K 
+```
 ### Purpose
 Krypton was created to be a modern replacement for shell coding languages; which are powerful, but really don't have the readability of source code or power-features modern coders have become accustomed to using with JavaScript. Aside from Krypton's XPR (cross-platform-runtime for JavaScript), Krypton is not exactly "feature-rich", supporting only a handful of functions to get the XPR up and running in a working environment.
 
@@ -39,7 +43,7 @@ Krypton also features technology from the [org.json](https://github.com/stleary/
 Here is a dump from within Krypton's interactive console support mode of the XPR's current API:
 
 ```javascript
-$K Object.keys(XPR).sort().join(XPR.getLineSeparator())
+[Linux: AMD64: Krypton]$K Object.keys(XPR).sort().join(XPR.getLineSeparator())
 appendTextFile
 changeDirectory
 copyFile
@@ -48,9 +52,12 @@ createFile
 currentDirectory
 deleteEnvironmentKey
 deleteFile
+directoryPath
 executableFile
 fileCreateTime
 fileExists
+fileName
+fileParent
 fileSize
 fileWritableSpace
 fileWriteTime
