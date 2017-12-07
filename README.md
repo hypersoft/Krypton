@@ -7,6 +7,25 @@ Krypton was created to be a modern replacement for shell coding languages; which
 ### Cross Platform Scripting
 XPR is designed to sport a "flat api"; in other words we move away from the object oriented API model providing a single global object, which hosts all of the functions needed for the XPR based coding. Not only is the API model "flat", so are all of the return values and inputs. This means only primitives and strings are supported, however complex objects can be passed in/out using JSON. This design feature is so that XPR can be compatible with "molested" scripting environments like Android's WebView JavascriptInterface, or in situations where passing full-fledged-runtime-objects is not a suitable option, such as in network transmission and other stream oriented interfaces like unix pipes (when working with other programs as drivers for example).
 
+### Supported POSIX Platforms
+
+ 1. aarch64-Linux
+ 2. arm-Linux
+ 3. Darwin
+ 4. i386-Linux
+ 5. i386-SunOS
+ 6. i386-Windows
+ 7. ppc64-Linux
+ 8. ppc64le-Linux
+ 9. ppc-AIX
+10. sparcv9-Linux
+11. spacv9-SunOS
+12. x86_64-FreeBSD
+13. x86_64-Linux
+14. x86_64-OpenBSD
+15. x86_64-SunOS
+16. x86_64-Windows
+
 ### General Capabilities
 You will find in Krypton's XPR, most everything (if not all) you need to do shell coding on multiple-platforms. Due to what Krypton is designed for, the Mozilla Rhino's live-connect feature is not enabled because we want to make sure your Krypton scripts can move around and be portable across multiple scripting engines, which may choose to offer an XPR clone, or emulation. So essentially, (if you have been paying attention) you can consider Krypton to be a shell for XPR. There are a few enhancements for Krypton itself in the works. You will have to "stay tuned" to find out what those are.
 
@@ -22,7 +41,7 @@ Here is a dump from within Krypton's interactive console support mode of the XPR
 ```javascript
 $K Object.keys(XPR).sort().join(XPR.getLineSeparator())
 appendTextFile
-changeCurrentDirectory
+changeDirectory
 copyFile
 createDirectory
 createFile
@@ -39,6 +58,7 @@ getCharacterEncodings
 getEnvironmentKey
 getEnvironmentKeys
 getFileSeparator
+getFileUri
 getLineSeparator
 getPathSeparator
 getSystemArchitecture
