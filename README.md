@@ -43,57 +43,59 @@ Krypton also features technology from the [org.json](https://github.com/stleary/
 Here is a dump from within Krypton's interactive console support mode of the XPR's current API:
 
 ```javascript
-[Linux: AMD64: Krypton]$K Object.keys(XPR).sort().join(XPR.getLineSeparator())
-appendTextFile
-changeDirectory
-copyFile
-createDirectory
-createFile
-currentDirectory
-deleteEnvironmentKey
-deleteFile
-directoryPath
-executableFile
-fileCreateTime
-fileExists
-fileName
-fileParent
-fileSize
-fileWritableSpace
-fileWriteTime
-getCharSet
-getCharacterEncodings
-getEnvironmentKey
-getEnvironmentKeys
-getFileSeparator
-getFileUri
-getFunctionSDK
-getLineSeparator
-getPathSeparator
-getSystemArchitecture
-getSystemCharSet
-getSystemType
-getSystemVersion
-getUserHome
-getUserName
-listFiles
-makeFileExecutable
-makeFileReadable
-makeFileWritable
-moveFile
-print
-printError
-printErrorLine
-printLine
-readLine
-readTextFile
-readableFile
-run
-setCharSet
-setEnvironmentKey
-setJsonSpacing
-writableFile
-writeTextFile
+[Linux: AMD64: Krypton]$K JSON.stringify(Object.keys(XPR).sort(), undefined, 2)
+[
+  "appendTextFile",
+  "changeDirectory",
+  "copyFile",
+  "createDirectory",
+  "createFile",
+  "currentDirectory",
+  "deleteEnvironmentKey",
+  "deleteFile",
+  "directoryPath",
+  "executableFile",
+  "fileCreateTime",
+  "fileExists",
+  "fileName",
+  "fileParent",
+  "fileSize",
+  "fileWritableSpace",
+  "fileWriteTime",
+  "getCharSet",
+  "getCharacterEncodings",
+  "getEnvironmentKey",
+  "getEnvironmentKeys",
+  "getFileSeparator",
+  "getFileUri",
+  "getFunctionSDK",
+  "getLineSeparator",
+  "getPathSeparator",
+  "getSystemArchitecture",
+  "getSystemCharSet",
+  "getSystemType",
+  "getSystemVersion",
+  "getUserHome",
+  "getUserName",
+  "listFiles",
+  "makeFileExecutable",
+  "makeFileReadable",
+  "makeFileWritable",
+  "moveFile",
+  "print",
+  "printError",
+  "printErrorLine",
+  "printLine",
+  "readLine",
+  "readTextFile",
+  "readableFile",
+  "run",
+  "setCharSet",
+  "setEnvironmentKey",
+  "setJsonSpacing",
+  "writableFile",
+  "writeTextFile"
+]
 ```
 
 ### Development Note
