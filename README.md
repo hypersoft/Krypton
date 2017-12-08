@@ -43,12 +43,13 @@ Krypton also features technology from the [org.json](https://github.com/stleary/
 Here is a dump from within Krypton's interactive console support mode of the XPR's current API:
 
 ```javascript
-[Linux: AMD64: Krypton]$K JSON.stringify(Object.keys(XPR).sort(), undefined, 2)
+[Linux: AMD64: triston]$K JSON.stringify(Object.keys(XPR).sort(), undefined, 2)
 [
   "appendTextFile",
   "base64ToBuffer",
   "bufferBytesTotal",
   "bufferCount",
+  "bufferLength",
   "bufferToBase64",
   "bufferToString",
   "changeDirectory",
