@@ -52,6 +52,7 @@ XPR.matchSDKs("\\S")
   "XPR.bufferBytesTotal: ƒ() => long",
   "XPR.bufferCount: ƒ() => long",
   "XPR.bufferLength: ƒ(Buffer buffer) => long",
+  "XPR.bufferToArrayBuffer: ƒ(Buffer transferOut) => Unknown",
   "XPR.bufferToBase64: ƒ(Buffer transferOut) => String",
   "XPR.bufferToInputStream: ƒ(Buffer transferOut) => Stream",
   "XPR.bufferToString: ƒ(Buffer transferOut, CharSet encoding) => String",
