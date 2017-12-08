@@ -42,8 +42,8 @@ Krypton also features technology from the [org.json](https://github.com/stleary/
 ### XPR Overview
 Here is a dump from within Krypton's interactive console support mode of the XPR's current API:
 
-```javascript
-[Linux: AMD64: triston]$K JSON.stringify(Object.keys(XPR).sort(), undefined, 2)
+```bash
+[triston@arch-linux ~]$ echo 'XPR.printLine(JSON.stringify(Object.keys(XPR).sort(), undefined, 2))' | krypton
 [
   "appendTextFile",
   "base64ToBuffer",
@@ -86,9 +86,9 @@ Here is a dump from within Krypton's interactive console support mode of the XPR
   "getUserHome",
   "getUserName",
   "listFiles",
-  "makeFileExecutable",
-  "makeFileReadable",
-  "makeFileWritable",
+  "markFileExecutable",
+  "markFileReadable",
+  "markFileWritable",
   "moveFile",
   "print",
   "printError",
@@ -97,6 +97,8 @@ Here is a dump from within Krypton's interactive console support mode of the XPR
   "readLine",
   "readTextFile",
   "readableFile",
+  "realFile",
+  "relativeFile",
   "run",
   "setCharSet",
   "setEnvironmentKey",
