@@ -69,7 +69,7 @@ XPR.matchSDKs("\\S")
   "XPR.fileCreateTime: ƒ(FilePath file) => EpochTime",
   "XPR.fileName: ƒ(FilePath file) => String",
   "XPR.fileParent: ƒ(FilePath file) => String",
-  "XPR.filePermissionSet: ƒ(FilePath file) => String",
+  filePermissions,
   "XPR.fileSize: ƒ(FilePath file) => long",
   "XPR.fileWritableSpace: ƒ(FilePath file) => long",
   "XPR.fileWriteTime: ƒ(FilePath file) => EpochTime",
