@@ -43,7 +43,7 @@ Krypton also features technology from the [org.json](https://github.com/stleary/
 Here is an SDK Snapshot of the current XPR API:
 
 ```javascript
-JSON.stringify(Object.keys(XPR).sort(), function(k, v){if (k === "") return v; return XPR.getSDK(v);}, 2)
+XPR.matchSDKs("\\S")
 ```
 ```json
 [
@@ -100,6 +100,7 @@ JSON.stringify(Object.keys(XPR).sort(), function(k, v){if (k === "") return v; r
   "XPR.markFileExecutable: ƒ(FilePath file, boolean status) => boolean",
   "XPR.markFileReadable: ƒ(FilePath file, boolean status) => boolean",
   "XPR.markFileWritable: ƒ(FilePath file, boolean status) => boolean",
+  "XPR.matchSDKs: ƒ(String regEx) => String",
   "XPR.moveFile: ƒ(FilePath source, FilePath destination) => boolean",
   "XPR.normalFile: ƒ(FilePath file) => boolean",
   "XPR.openFileInputStream: ƒ(Stream stream) => Stream",
