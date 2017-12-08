@@ -47,6 +47,8 @@ Here is a dump from within Krypton's interactive console support mode of the XPR
 [
   "appendTextFile",
   "base64ToBuffer",
+  "bufferBytesTotal",
+  "bufferCount",
   "bufferToBase64",
   "bufferToString",
   "changeDirectory",
