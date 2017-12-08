@@ -100,7 +100,7 @@ XPR.matchSDKs("\\S")
   "XPR.markFileExecutable: ƒ(FilePath file, boolean status) => boolean",
   "XPR.markFileReadable: ƒ(FilePath file, boolean status) => boolean",
   "XPR.markFileWritable: ƒ(FilePath file, boolean status) => boolean",
-  "XPR.matchSDKs: ƒ(String regEx) => String",
+  "XPR.matchSDKs: ƒ(String regEx, String regExModifier) => String",
   "XPR.moveFile: ƒ(FilePath source, FilePath destination) => boolean",
   "XPR.normalFile: ƒ(FilePath file) => boolean",
   "XPR.openFileInputStream: ƒ(Stream stream) => Stream",
