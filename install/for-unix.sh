@@ -15,11 +15,6 @@ BASH=`type -p bash`;
 
 KRYPTON=`pwd`
 
-[[ ${KRYPTON##*/} == "Krypton" ]] || {
-  echo "You must run this file from the project root directory";
-  exit 1;
-}
-
 JAR_PATH=${0%*install/for-unix.sh}jar/krypton.jar
 
 INSTALL_LIB_PATH=/usr/lib
