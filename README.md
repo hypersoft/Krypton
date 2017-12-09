@@ -125,6 +125,7 @@ XPR.matchSDKs("\\S")
   "XPR.readTextFile: ƒ(FilePath file, CharSet encoding) => String",
   "XPR.readableFile: ƒ(FilePath file) => boolean",
   "XPR.relativeFile: ƒ(FilePath file) => boolean",
+  "XPR.resetStandardStreams: ƒ() => void",
   "XPR.run: ƒ(FilePath command, JSONObject options) => JSONObject",
   "XPR.setCharSet: ƒ(CharSet encoding, boolean validated) => void",
   "XPR.setEnvironmentKey: ƒ(String key, String value) => void",
