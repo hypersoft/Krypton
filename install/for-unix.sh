@@ -88,10 +88,16 @@ cat <<EOF > "$INSTALL_BIN_PATH/krypton"
 
 ${RLWRAP}java ${INSTALL_EXT_PATH}-jar ${INSTALL_LIB_PATH}/krypton.jar "\$@";
 
+exit $?
+
+Installation Date: `date`
+
+Thank you for choosing Krypton by Hypersoft-Systems: U.-S.-A.
+
 EOF
 } || exit $?;
 
 echo
 chmod -v +x "$INSTALL_BIN_PATH/krypton" || exit $?;
 
-echo $'\n'"Thank you for choosing Krypton by Hypersoft-Systems: U.-S.-A."$'\n';
+tail -n3 "$INSTALL_BIN_PATH/krypton";
