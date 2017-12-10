@@ -88,9 +88,11 @@ cat <<EOF > "$INSTALL_BIN_PATH/krypton"
 
 ${RLWRAP}java ${INSTALL_EXT_PATH}-jar ${INSTALL_LIB_PATH}/krypton.jar "\$@";
 
-exit $?
+exit \$?;
 
 Installation Date: `date`
+
+`cat ${0%*install/for-unix.sh}/LICENSE`
 
 Thank you for choosing Krypton by Hypersoft-Systems: U.-S.-A.
 
