@@ -23,6 +23,7 @@ while [[ "\${1:0:2}" == -- ]]; do
     if [[ "\$1" == '--commands' ]]; then
         INSTALL_BIN_PATH="\$2"; shift 2; continue;
     fi;
+    break;
 done;
 EOF
 );
