@@ -86,7 +86,7 @@ echo $'\n'"generating $INSTALL_BIN_PATH/krypton launcher..."
 cat <<EOF > "$INSTALL_BIN_PATH/krypton"
 #!${BASH}
 
-${RLWRAP}java ${INSTALL_EXT_PATH}-jar ${INSTALL_LIB_PATH}/krypton.jar "\$@";
+${RLWRAP}java -classpath "$INSTALL_LIB_PATH" ${INSTALL_EXT_PATH}-jar ${INSTALL_LIB_PATH}/krypton.jar "\$@";
 
 exit \$?;
 
