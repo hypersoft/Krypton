@@ -1,5 +1,5 @@
 # Krypton
-Portable JavaScript Engine Featuring Mozilla Rhino
+Portable JavaScript Interpreter Featuring Mozilla Rhino and POSIX Extensions
 
 ```sh
 $K configurePrompt('"[" + XPR.getSystemType() + ": " + XPR.getSystemArchitecture().toUpperCase() + ": " + XPR.fileName(XPR.currentDirectory()) + "]$K "', true)
