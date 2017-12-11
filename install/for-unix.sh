@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 RLWRAP=`type -p rlwrap`;
-BASH=`type -p bash`;
 
 INSTALL_LIB_PATH=/usr/lib
 INSTALL_BIN_PATH=/bin
