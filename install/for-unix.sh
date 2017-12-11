@@ -11,7 +11,7 @@ automatic=0;
 script=$(cat <<EOF
 while [[ "\${1:0:2}" == -- ]]; do
     if [[ "\$1" == '--automatic' ]]; then
-     automatic=1; shift; continue;
+        automatic=1; shift; continue;
     fi;
     if [[ "\$1" == '--classpath' ]]; then
         INSTALL_EXT_PATH="-classpath \$2 "; shift 2; continue;
@@ -21,6 +21,15 @@ while [[ "\${1:0:2}" == -- ]]; do
     fi;
     if [[ "\$1" == '--commands' ]]; then
         INSTALL_BIN_PATH="\$2"; shift 2; continue;
+    fi;
+    if [[ "\$1" == '--jar-path' ]]; then
+        JAR_PATH="\$2"; shift 2; continue;
+    fi;
+    if [[ "\$1" == '--jar-files' ]]; then
+        JAR_FILES="\$2"; shift 2; continue;
+    fi;
+    if [[ "\$1" == '--jar-name' ]]; then
+        JAR_NAME="\$2"; shift 2; continue;
     fi;
     break;
 done;
@@ -42,10 +51,9 @@ EOF
  RLWRAP="$RLWRAP -c --command-name krypton ";
 }
 
-KRYPTON=`pwd`
-
-JAR_PATH="${0%*install/for-unix.sh}jar/*.jar"
-
+[[ -z "$JAR_PATH" ]] && JAR_PATH="${0%*install/for-unix.sh}jar";
+[[ -z "$JAR_FILES" ]] && JAR_FILES="${JAR_PATH}/*.jar";
+[[ -z "$JAR_NAME" ]] && JAR_NAME="krypton.jar";
 
 ((automatic == 0)) && {
 echo
@@ -77,21 +85,21 @@ test -w "$INSTALL_BIN_PATH" || {
 
 echo
 
-echo "installing required libraries...";
-cp -v $JAR_PATH "$INSTALL_LIB_PATH" || exit $?;
+echo "installing license (MPL 2.0) and java libraries...";
+cp -v ${0%*install/for-unix.sh}LICENSE ${JAR_FILES} -t "$INSTALL_LIB_PATH" || exit $?;
 
 echo $'\n'"generating $INSTALL_BIN_PATH/krypton launcher..."
 {
 cat <<EOF > "$INSTALL_BIN_PATH/krypton"
 #!${BASH}
 
-${RLWRAP}java ${INSTALL_EXT_PATH}-jar ${INSTALL_LIB_PATH}/krypton.jar "\$@";
+${RLWRAP}java ${INSTALL_EXT_PATH}-jar ${INSTALL_LIB_PATH}/${JAR_NAME} "\$@";
 
 exit \$?;
 
 Installation Date: `date`
 
-`cat ${0%*install/for-unix.sh}/LICENSE`
+Please see ${INSTALL_LIB_PATH}/LICENSE for licensing details.
 
 Thank you for choosing Krypton by Hypersoft-Systems: U.-S.-A.
 
@@ -101,4 +109,4 @@ EOF
 echo
 chmod -v +x "$INSTALL_BIN_PATH/krypton" || exit $?;
 
-tail -n3 "$INSTALL_BIN_PATH/krypton";
+tail -n7 "$INSTALL_BIN_PATH/krypton";
