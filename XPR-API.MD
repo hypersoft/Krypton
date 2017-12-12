@@ -27,7 +27,7 @@ XPR.matchSDKs("\\S")
   "XPR.currentDirectory: ƒ() => FilePath",
   "XPR.deleteEnvironmentKey: ƒ(String key) => void",
   "XPR.deleteFile: ƒ(FilePath file) => boolean",
-  "XPR.directoryFile: ƒ(FilePath file) => boolean",
+  "XPR.directoryPath: ƒ(FilePath file) => boolean",
   "XPR.executableFile: ƒ(FilePath file) => boolean",
   "XPR.existingFile: ƒ(FilePath file) => boolean",
   "XPR.fileCreateTime: ƒ(FilePath file) => EpochTime",
