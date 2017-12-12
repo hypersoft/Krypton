@@ -14,6 +14,7 @@ XPR.matchSDKs("\\S")
   "XPR.bufferLength: f:(Buffer buffer) => long",
   "XPR.bufferToArrayBuffer: f:(Buffer transferOut) => ArrayBuffer",
   "XPR.bufferToBase64: f:(Buffer transferOut) => String",
+  "XPR.bufferToDigestMD5: f:(Buffer buffer) => String",
   "XPR.bufferToInputStream: f:(Buffer transferOut) => Stream",
   "XPR.bufferToString: f:(Buffer transferOut, CharSet encoding) => String",
   "XPR.canExecute: f:(FilePath file) => boolean",
