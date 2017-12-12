@@ -16,6 +16,9 @@ XPR.matchSDKs("\\S")
   "XPR.bufferToBase64: ƒ(Buffer transferOut) => String",
   "XPR.bufferToInputStream: ƒ(Buffer transferOut) => Stream",
   "XPR.bufferToString: ƒ(Buffer transferOut, CharSet encoding) => String",
+  "XPR.canExecute: ƒ(FilePath file) => boolean",
+  "XPR.canRead: ƒ(FilePath file) => boolean",
+  "XPR.canWrite: ƒ(FilePath file) => boolean",
   "XPR.changeDirectory: ƒ(FilePath directory) => void",
   "XPR.closeStream: ƒ(Stream stream) => void",
   "XPR.copyBufferOutputStreamBytes: ƒ(Stream bufferOutputStream) => Buffer",
@@ -28,7 +31,6 @@ XPR.matchSDKs("\\S")
   "XPR.deleteEnvironmentKey: ƒ(String key) => void",
   "XPR.deleteFile: ƒ(FilePath file) => boolean",
   "XPR.directoryPath: ƒ(FilePath file) => boolean",
-  "XPR.executableFile: ƒ(FilePath file) => boolean",
   "XPR.existingFile: ƒ(FilePath file) => boolean",
   "XPR.fileCreateTime: ƒ(FilePath file) => EpochTime",
   "XPR.fileName: ƒ(FilePath file) => String",
@@ -80,7 +82,6 @@ XPR.matchSDKs("\\S")
   "XPR.readInputStream: ƒ(Stream stream, Buffer buffer) => int",
   "XPR.readLine: ƒ(CharSet encoding) => String",
   "XPR.readTextFile: ƒ(FilePath file, CharSet encoding) => String",
-  "XPR.readableFile: ƒ(FilePath file) => boolean",
   "XPR.relativeFile: ƒ(FilePath file) => boolean",
   "XPR.resetStandardStreams: ƒ() => void",
   "XPR.run: ƒ(FilePath command, JSONObject options) => JSONObject",
@@ -95,7 +96,6 @@ XPR.matchSDKs("\\S")
   "XPR.sliceBuffer: ƒ(Buffer buffer, int offset, int length) => Buffer",
   "XPR.stringToBuffer: ƒ(String source, CharSet encoding) => Buffer",
   "XPR.updateFile: ƒ(FilePath source, FilePath destination) => boolean",
-  "XPR.writableFile: ƒ(FilePath file) => boolean",
   "XPR.writeOutputStream: ƒ(Stream stream, Buffer buffer, boolean flush) => void",
   "XPR.writeTextFile: ƒ(FilePath file, String output, CharSet encoding) => void"
 ]
