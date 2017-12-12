@@ -1,9 +1,8 @@
 # Krypton
 Portable JavaScript Interpreter Featuring Mozilla Rhino and POSIX Extensions
 
-```sh
-$K configurePrompt('"[" + XPR.getSystemType() + ": " + XPR.getSystemArchitecture().toUpperCase() + ": " + XPR.fileName(XPR.currentDirectory()) + "]$K "', true)
-[Linux: AMD64: Krypton]$K 
+```java
+  // todo Processes, Callbacks, Signal Handlers, Signaling and Threads
 ```
 ### Purpose
 Krypton was created to be a modern replacement for shell coding languages; which are powerful, but really don't have the readability of source code or power-features modern coders have become accustomed to using with JavaScript. Aside from Krypton's XPR (cross-platform-runtime for JavaScript), Krypton is not exactly "feature-rich", supporting only a handful of functions to get the XPR up and running in a working environment.
