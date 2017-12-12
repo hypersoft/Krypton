@@ -1,8 +1,7 @@
 a74ef39c5bdd352867c9953fa0be590c *XPR-API.MD
-d5caaf2e27c3f829a791651efc013e1c *jar/asm.jar
-f4a44ec0a9c6d2ecd6e233e9d325838d *jar/help.jar
-d3a475dded757696fe66af541cc29d91 *jar/jffi.jar
-d7330bd238b7a09a682f2dc39487dc5a *jar/jnr.jar
-1501109b83fc6b26da309a285ce9fa5a *jar/krypton.jar
-247d55ae10001b62926caadf6767e537 *jar/posix.jar
-252c36d66c5606e1a480c9b97af27c1e *jar/rhino.jar
+f2350bb1e78c0a8957de256095fec68d *jar/help.jar
+09d440da86091b92ce5ba26f33de619e *jar/jffi.jar
+843cd915101b03dca100a67418780e75 *jar/krypton.jar
+c6c52c0ed8cb8e05405a7f0532e467f2 *jar/posix.jar
+886a61093897b2e076ddc10c330403de *jar/rhino.jar
+24f715e8a3747f2a5667926f821e450d *jar/scripts.jar
